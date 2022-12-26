@@ -1,0 +1,114 @@
+body, h1, h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+ol > li {
+  text-align: left;
+}
+
+h3 {
+  color: #121212;
+}
+
+button, input {
+  padding: 15px 30px;
+}
+
+div {
+  padding: 10px;
+}
+
+.default-color {
+  color:rgb(53, 53, 236);
+} 
+
+.new-color {
+  color: rgb(201, 14, 14);
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  margin: 0 30px;
+  display: inline-block;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.btn-cart {
+  background-color: blue;
+  color:beige;
+  border: none;
+}
+
+.btn-clear {
+  margin: 20px 0;
+  background-color: red;
+  color: beige;
+  border: none;
+}
+
+.total-count {
+  padding: 0 0 0 5px;
+}
+
+.shopping {
+  padding: 20px;
+  width: 150px;
+  height: 80px;
+  border: 1px solid blue;
+  display: inline-block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

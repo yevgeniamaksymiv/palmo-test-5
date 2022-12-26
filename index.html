@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/cb5e6ad33a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>Task 1</h3>
+      <button id="btn-task1">Press the button</button>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 2</h3>
+      <input id="input-task2" type="text" value="Hello, Palmo!" />
+      <button id="btn-task2">Change</button>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 3</h3>
+      <input id="input-task3" type="text" placeholder="Enter text" />
+      <button id="btn-task3">Read</button>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 4</h3>
+      <h1 id="title1">"Hello, Palmo!"</h1>
+      <h1 id="title2">"Hello, World!"</h1>
+      <button id="btn-task4">Change</button>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 5</h3>
+      <p id="color-text" class="default-color">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
+        obcaecati!
+      </p>
+      <button id="btn-task5">Change color</button>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 6</h3>
+      <input id="input-task6" type="text" placeholder="Enter text" />
+      <button id="btn-task6">Disable</button>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 7</h3>
+      <div id="square-red" class="square"></div>
+      <div id="square-green" class="square"></div>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 8</h3>
+      <ul id="list"></ul>
+      <button id="btn-task8">Add</button>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 9</h3>
+      <div>
+        <textarea id="textarea" placeholder="Enter the text..."></textarea>
+      </div>
+      <button id="btn-task9">Add list</button>
+      <ol id="textarea-list"></ol>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 10</h3>
+      <form id="form" method="post" class="form">
+        <div class="form-field">
+          <input
+            type="text"
+            name="login"
+            id="login"
+            placeholder="Login"
+            minlength="4"
+            maxlength="20"
+            required
+          />
+          <br />
+          <span></span>
+        </div>
+        <div class="form-field">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <br />
+          <span></span>
+        </div>
+        <div class="form-field">
+          <input type="number" name="age" id="age" placeholder="Age" required />
+          <br />
+          <span></span>
+        </div>
+        <div class="form-field">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            minlength="6"
+            required
+          />
+          <br />
+          <span></span>
+        </div>
+        <div class="form-field">
+          <input
+            type="password"
+            name="password-confirm"
+            id="password-confirm"
+            placeholder="Confirm the password"
+            minlength="6"
+            required
+          />
+          <br />
+          <span></span>
+        </div>
+        <div>
+          <button id="btn-submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 11</h3>
+      <div>
+        <input type="text" id="result" />
+        <input type="button" value="Clear" onClick="clearInput()" />
+      </div>
+      <div>
+        <input type="button" value="1" class="btn" onClick="display('1')" />
+        <input type="button" value="2" class="btn" onClick="display('2')" />
+        <input type="button" value="3" class="btn" onClick="display('3')" />
+        <input type="button" value="4" class="btn" onClick="display('4')" />
+        <input type="button" value="5" class="btn" onClick="display('5')" />
+        <input type="button" value="6" class="btn" onClick="display('6')" />
+        <input type="button" value="7" class="btn" onClick="display('7')" />
+        <input type="button" value="8" class="btn" onClick="display('8')" />
+        <input type="button" value="9" class="btn" onClick="display('9')" />
+        <input type="button" value="0" class="btn" onClick="display('0')" />
+        <input
+          type="button"
+          value="-"
+          class="operator"
+          onClick="display('-')"
+        />
+        <input
+          type="button"
+          value="+"
+          class="operator"
+          onClick="display('+')"
+        />
+        <input
+          type="button"
+          value="/"
+          class="operator"
+          onClick="display('/')"
+        />
+        <input
+          type="button"
+          value="*"
+          class="operator"
+          onClick="display('*')"
+        />
+        <input type="button" value="=" class="btn equal" onClick="count()" />
+      </div>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 12</h3>
+      <div>
+        <button
+          type="button"
+          id="btn-cart"
+          class="btn-cart"
+          data-toggle="modal"
+          data-target="#cart"
+        >
+          Cart <i class="fas fa-shopping-cart"></i
+          ><span id="total-count" class="total-count"></span>
+        </button>
+      </div>
+      <div class="products">
+        <div class="shopping">
+          <h3 style="padding: 0 0 15px">Orange</h3>
+          <button id="add-to-cart" class="add-to-cart" data-name="Orange">
+            Add
+          </button>
+        </div>
+        <div class="shopping">
+          <h3 style="padding: 0 0 15px">Lemon</h3>
+          <button
+            id="add-to-cart"
+            class="add-to-cart"
+            data-name="Lemon"
+            onClick="addToCart()"
+          >
+            Add
+          </button>
+        </div>
+        <div class="shopping">
+          <h3 style="padding: 0 0 15px">Apple</h3>
+          <button
+            id="add-to-cart"
+            class="add-to-cart"
+            data-name="Apple"
+            onClick="addToCart()"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <ul id="cart-list"></ul>
+        <button id="clear-cart" class="btn-clear">Clear Cart</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
